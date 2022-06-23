@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/_5sdp"
+    android:paddingVertical="@dimen/_10sdp"
+    tools:context=".secondPage">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="cursive"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#EAE7CC"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:src="@drawable/img_1"/>
+
+            <TextView
+                android:id="@+id/firstNameTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="first name"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:textSize="@dimen/_18sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lastNameTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="last name"
+                android:textSize="@dimen/_18sdp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="monospace"
+                android:text="Gender:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/genderTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="gender"
+                android:textSize="@dimen/_15sdp" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="monospace"
+                android:text="SKILLS"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/skillsCbTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="skill"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="monospace"
+                android:text="HOBBIES"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black" />
+            <TextView
+                android:id="@+id/hobbiesCbTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hobbies"
+                android:textSize="@dimen/_15sdp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#287C74"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="monospace"
+                android:text="CONTACT"
+                android:textColor="#EAE7CC"
+                android:textSize="@dimen/_17sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="#EAE7CC" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="monospace"
+                android:text="Phone number:"
+                android:textColor="#EAE7CC"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/phoneNumTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="phone number"
+                android:textColor="#000E0D"
+                android:textSize="@dimen/_13sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="monospace"
+                android:text="Email id:"
+                android:textColor="#EAE7CC"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/emailTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="email"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="monospace"
+                android:text="address:"
+                android:textColor="#EAE7CC"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/addTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="monospace"
+                android:text="City:"
+                android:textColor="#EAE7CC"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/cityNameTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="city"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="monospace"
+                android:text="State:"
+                android:textColor="#EAE7CC"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/stateNameTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="state"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="monospace"
+                android:text="EDUCATION"
+                android:textColor="#EAE7CC"
+                android:textSize="@dimen/_17sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#EAE7CC" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="monospace"
+                android:text="School name:"
+                android:textColor="#EAE7CC"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/sclNameTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="school name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="monospace"
+                android:text="College name:"
+                android:textColor="#EAE7CC"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/clgNameTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="college name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
